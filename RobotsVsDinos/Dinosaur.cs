@@ -12,14 +12,20 @@ namespace RobotsVsDinos
         public string type;
         public int health;
         public int energy;
-        public double attackPower;
+        public int attackPower;
 
-        public Dinosaur(string type, int health, int energy, double attackPower)
+        public Dinosaur(string type, int attackPower)
         {
             this.type = type;
-            this.health = health;
-            this.energy = energy;
+            this.health = 100;
             this.attackPower = attackPower;
         }
+
+        public void Attack(Robot robot)
+        {
+            robot.health -= attackPower;
+            Console.WriteLine($"{type} attacks {robot.name} for {attackPower} damage. Robot's new health is {robot.health}.");
+        }
+        
     }
 }

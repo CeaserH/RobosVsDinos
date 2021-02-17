@@ -10,6 +10,9 @@ namespace RobotsVsDinos
     {
         static void Main(string[] args)
         {
+            Battlefield battlefield = new Battlefield();
+            battlefield.StartBattle();
+
         }
     }
 }
