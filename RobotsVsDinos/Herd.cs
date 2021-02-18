@@ -12,12 +12,12 @@ namespace RobotsVsDinos
 
         public Herd()
         {
-            Dinosaur tRex = new Dinosaur("T-Rex", 100);
-            Dinosaur bronto = new Dinosaur("Brontosaurus", 75);
-            Dinosaur raptor = new Dinosaur("Raptor", 30);
 
             dinos = new List<Dinosaur>();
 
+            Dinosaur tRex = new Dinosaur("T-Rex", 50);
+            Dinosaur bronto = new Dinosaur("Brontosaurus", 45);
+            Dinosaur raptor = new Dinosaur("Raptor", 30);
 
             dinos.Add(tRex);
             dinos.Add(bronto);

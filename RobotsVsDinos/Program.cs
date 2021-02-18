@@ -13,6 +13,8 @@ namespace RobotsVsDinos
             Battlefield battlefield = new Battlefield();
             battlefield.StartBattle();
 
+            Console.ReadLine();
+
         }
     }
 }

@@ -11,7 +11,6 @@ namespace RobotsVsDinos
 
         public string name;
         public int health;
-        public int power;
         public Weapon weapon;
 
 
@@ -22,7 +21,7 @@ namespace RobotsVsDinos
             this.weapon = new Weapon(weapType, weapPow);
         }
 
-        public void Slash(Dinosaur dinosaur)
+        public void Attack(Dinosaur dinosaur)
         {
             dinosaur.health -= weapon.attackPower;
             Console.WriteLine($"{name} attacks {dinosaur.type} with {weapon.type} for {weapon.attackPower} damage. {dinosaur.type}'s new heatlh is {dinosaur.health}.");

@@ -24,7 +24,7 @@ namespace RobotsVsDinos
         public void Attack(Robot robot)
         {
             robot.health -= attackPower;
-            Console.WriteLine($"{type} attacks {robot.name} for {attackPower} damage. Robot's new health is {robot.health}.");
+            Console.WriteLine($"{type} attacks {robot.name} for {attackPower} damage. {robot.name}'s new health is {robot.health}.");
         }
         
     }
